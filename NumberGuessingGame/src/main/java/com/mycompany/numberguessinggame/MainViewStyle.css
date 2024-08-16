@@ -1,0 +1,43 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 15.08.2024, 23:00:24
+    Author     : Berk Can Ulubas
+*/
+
+#mainView {
+    -fx-blend-mode: darken;
+    -fx-background-color: #f0f0f000;
+}
+
+#background {
+    -fx-background-color: #f0f0f000;
+}
+
+#title {
+    -fx-font-weight: bold;
+    -fx-font: 28px "Arial";
+    -fx-padding: 10px;
+}
+
+#output {
+    -fx-font-weight: normal;
+    -fx-font: 18px "Arial";
+    -fx-padding: 10px;
+}
+
+#input {
+    -fx-font-weight: normal;
+    -fx-font: 18px "Arial";
+    -fx-padding: 10px;
+}
+
+.output-default {
+    -fx-text-fill: black;
+}
+
+.output-error {
+    -fx-text-fill: red;
+}
