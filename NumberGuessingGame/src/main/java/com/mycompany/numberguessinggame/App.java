@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 
 
 /**
+ * This Program is a simple number guessing game. One player enters a number and the other player has to guess it.
+ * 
  * @author Berk Can Ulubas
  * @version 16.08.2024
  */
