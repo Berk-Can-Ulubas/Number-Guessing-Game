@@ -36,6 +36,7 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         gameLogic = new GameLogic();
         showNormalMessage("Enter a number, that the Other player has to guess");
+        input.clear();
     }
 
     /**
@@ -51,7 +52,9 @@ public class Controller implements Initializable {
             showNormalMessage(gameLogic.update(guessedNumber));
         } catch (NumberFormatException e) {
             showError("You have not entered a valid number!");
-        }       
+        }finally {
+            input.clear();
+        }
     }
     
     /**
@@ -63,7 +66,8 @@ public class Controller implements Initializable {
     @FXML
     public void restart(ActionEvent event){
         gameLogic.restart();
-        showNormalMessage("Enter a number, that the Other player has to guess");
+        showNormalMessage("Enter a number that the other player has to guess");
+        input.clear();
     }
 
     /**
